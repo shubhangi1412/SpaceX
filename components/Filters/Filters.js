@@ -1,20 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './Filters.module.css';
 import LaunchYears from './components/LaunchYears/LaunchYears';
 import SuccessLaunch from './components/SuccessLaunch/SuccessLaunch';
 import SuccessLanding from './components/SuccessLanding/SuccessLanding';
+import PropTypes from 'prop-types';
 
-class Filters extends Component {
-
-    render() {
-        return (
+const Filters=(props)=> {
+ return (
         <div className= {styles.container}>    
             <h4 className={styles.header}>Filters</h4>
-            <LaunchYears yearHandler={this.props.launchYear}/>
-            <SuccessLaunch  SuccessHandler={this.props.launchSuccess} />
-            <SuccessLanding landHandler={this.props.landSuccess} disable={this.props.disable}/>
+            <LaunchYears yearHandler={props.launchYear}/>
+            <SuccessLaunch  SuccessHandler={props.launchSuccess} />
+            <SuccessLanding landHandler={props.landSuccess} disable={props.disable}/>
         </div>);
-    }
+    
 }
 
-export default Filters;
+export default React.memo(Filters);
+
+Filters.propTypes = {
+    launchSuccess: PropTypes.func,
+    launchYear:PropTypes.func,
+    launchYear:PropTypes.func,
+    disable:PropTypes.bool
+}

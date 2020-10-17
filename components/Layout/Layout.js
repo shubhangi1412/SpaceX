@@ -3,7 +3,6 @@ import Filters from "../Filters/Filters";
 import CardLists from "../CardLists/CardLists";
 import styles from "./Layout.module.css";
 import Router from "next/router";
-import PropTypes from 'prop-types';
 class Layout extends Component {
   constructor(props) {
     super(props);
@@ -101,6 +100,4 @@ class Layout extends Component {
 }
 
 export default Layout;
-Layout.propTypes={
-  data: PropTypes.object
-}
+

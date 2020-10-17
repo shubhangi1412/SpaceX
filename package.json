@@ -19,12 +19,7 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.12.1",
-    "@babel/preset-typescript": "^7.12.1",
-    "@types/jest": "^26.0.14",
-    "babel-core": "^6.26.3",
     "babel-jest": "^26.5.2",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "enzyme-to-json": "^3.6.1",
@@ -33,16 +28,6 @@
   "jest": {
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
-    ]
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-react",
-      "@babel/preset-env"
-    ],
-    "plugins": [
-      "@babel/plugin-transform-react-jsx",
-      "@babel/plugin-proposal-class-properties"
     ]
   }
 }
