@@ -1,20 +1,21 @@
 ## Overview
-This App is built using Next.js and React.
-Next.js is a framework that makes it easy to create 'universal' React apps - React apps that do both client and server side rendering.
+This App is built using Next.js and React. Next.js is a framework that makes it easy to create 'universal' React apps - React apps that do both client and server side rendering.
 
-## Getting Started
+* By default,the app it will open the home component.
+* We have three Filters(Year, Launch Success, Land Success) to filter the SpaceX Program List on UI.
+* Filters are all configurable and behave like Toggle Button. Applied filters will change the URL and update the Page with latest records without refreshing the page.
+* App is developed by following all the best SEO optimization techniques with Server Side Rendering, React Memorization.
+* Api call made in the parent level and data served to child component with the help of Props.
+* App is targeted for Mobile, Ipad, Desktop.
 
-First, run the development server:
+## Getting Started - Development Server
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+1. Clone this repo by running git clone https://github.com/shubhangi1412/SpaceX
+2. cd SpaceX
+3. npm install
+4. npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
 ## Learn More
 
@@ -29,4 +30,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+App is Hosted on [SpaceX](https://space98.vercel.app/)
+
+## SEO Report
+
+Lighthouse is an open-source, automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO and more. 
+<img src="seo/Report.png"  />
