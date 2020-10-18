@@ -1,9 +1,17 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
-
+import Head from 'next/head'
 
 function HomePage({data}) {
     return (<div>
+       <Head>
+        <title>SpaceX App</title>
+        <meta charSet="utf-8" />
+        <meta name="description" content="SpaceX is a sigle-page application developed in React, which enables user to browse through various SpaceX Programs Launched."/>
+        <meta name="keywords" content="SpaceX"/>
+        <meta name="author" content="Shubhangi Singh"/>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Layout data={data} />
       <style jsx global>{`
         body {

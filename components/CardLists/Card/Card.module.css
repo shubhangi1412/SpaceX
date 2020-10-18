@@ -12,6 +12,7 @@
 
 .img {
     width: 85%;
+    height: auto;
     background-color:  #f3f3f3;
     align-self: center;
 }   

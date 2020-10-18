@@ -14,15 +14,16 @@ const Card=(props)=>{
     return (
       <div className={styles.container}>
           <img className={styles.img} 
-            src= {props.imageSrc} />
+            src= {props.imageSrc} alt="SpaceX Card"/>
 
           <section className={styles.section}>
           <h3 style={{margin:"15px 0px 10px 0px" , lineHeight: "normal"}}>{props.missionName}#{props.flightNumber} </h3>
           <b>Mission Ids :</b>
           <ul style={{margin: "0px",  lineHeight: "normal"}}>
-            {props.missionId.map((item, index)=>(
+            {props.missionId.length ?
+            props.missionId.map((item, index)=>(
               <li key={index}>{item} </li>
-            ))}
+            )): <li>No Id Found</li>}
           </ul>
           <p><b>Launch Year : </b> {props.launchYear} </p> 
           <p><b>Successful Launch: </b>{props.launchSuccess? "True" : "False"}</p>
