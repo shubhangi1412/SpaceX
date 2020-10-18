@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Overview
+This App is built using Next.js and React.
+Next.js is a framework that makes it easy to create 'universal' React apps - React apps that do both client and server side rendering.
 
 ## Getting Started
 
