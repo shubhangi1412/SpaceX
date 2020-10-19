@@ -25,6 +25,7 @@
     "enzyme-to-json": "^3.6.1",
     "imagemin-optipng": "^8.0.0",
     "jest": "^26.5.3",
+    "next-compose-plugins": "^2.2.0",
     "next-optimized-images": "^2.6.2"
   },
   "jest": {
