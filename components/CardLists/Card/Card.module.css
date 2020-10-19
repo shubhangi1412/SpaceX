@@ -22,8 +22,8 @@
     font-weight: 400 ;
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
     justify-items: space-between;
     font-family: Calibri;
     font-size: 18px;
+    margin: auto;
 }

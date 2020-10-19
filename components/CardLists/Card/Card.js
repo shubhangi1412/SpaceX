@@ -15,7 +15,6 @@ const Card=(props)=>{
       <div className={styles.container}>
           <img className={styles.img} 
             src= {props.imageSrc} alt="SpaceX Card"/>
-
           <section className={styles.section}>
           <h3 style={{margin:"15px 0px 10px 0px" , lineHeight: "normal"}}>{props.missionName}#{props.flightNumber} </h3>
           <b>Mission Ids :</b>
